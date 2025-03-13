@@ -1,0 +1,334 @@
+/* Reset CSS */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #8e44ad, #3498db);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+} */
+  
+  h1, p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    /* background: rgba(255, 255, 255, 0.15);
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px); */
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  /* Form Styling */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  input, select, button, textarea {
+    font-size: 1rem;
+    padding: 10px 15px;
+    border: none;
+  }
+  
+  input, select, textarea {
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    outline: none;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  input:focus, select:focus, textarea:focus {
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.7);
+  }
+  
+  button:not(.goal, .start) {
+    /* background: linear-gradient(135deg, #4caf50, #2ecc71); */
+    margin-top: 10px;
+    margin-right: 10px;
+    padding: 5%;
+    background-color: #fff;
+    border: 1px solid black;
+    color: #000000;
+    cursor: pointer;
+    box-shadow: 3px 5px 8px rgba(0, 0, 0, 0.196);
+    transition: transform 0.3s ease, background 0.3s ease;
+    font-family: 'forum';
+  }
+  
+  button:hover {
+    transform: translateY(-3px);
+    background: linear-gradient(135deg, #27ae60, #1abc9c);
+  }
+  
+  button:active {
+    transform: translateY(0);
+  }
+  
+  /* Meditation Page */
+  #timer {
+    font-size: 3rem;
+    margin: 20px 0;
+    color: #fff;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 480px) {
+    body {
+      padding: 10px;
+    }
+  
+    .container {
+      padding: 20px;
+    }
+  
+    h1 {
+      font-size: 1.5rem;
+    }
+  
+    button, input, select {
+      font-size: 0.9rem;
+    }
+  }
+
+
+
+
+/* Styling for Home Page */
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  position: relative;
+  z-index: 1;
+  background-size: cover;
+  overflow: hidden; 
+}
+
+header {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+header h1 {
+  font-weight: 700;
+  font-family: "Bodoni Moda";
+}
+
+.home {
+  display: flex;
+  height: 92vh;
+  align-items: center;
+}
+
+.main-hero > ul {
+  display: flex;
+}
+
+#main-title {
+  font-family: "Forum";
+  font-weight: 700;
+  font-size: 9rem;
+  position: relative;
+}
+
+.left-content {
+  margin: 0 3rem;
+  width: 50vw;
+}
+
+.username {
+  margin-bottom: 1rem;
+  background-color: rgb(255, 255, 255);
+  border: 1.5px solid rgba(0, 79, 49, 0.868);
+  color: rgb(6, 67, 46);
+  height: 3rem;
+  width: 20rem;
+  box-shadow: 1px 1px 10px rgba(2, 105, 72, 0.761);
+}
+
+span {
+  color: rgb(142, 142, 142);
+  font-weight: bold;
+}
+
+.form-user {
+  margin-top: 2rem;
+  display: flex;
+}
+
+.form-user .start {
+  width: 13rem;
+  height: 2.8rem;
+  margin-left: 1rem;
+  border-radius: 2.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  color: rgb(0, 101, 0);
+  background-color: #94c3a0;
+  box-shadow: 5px 5px 5px rgba(180, 180, 180, 0.678);
+  border: 2px solid rgb(0, 130, 0);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.goal {
+  border: 2px solid rgb(0, 130, 0);
+  color: rgb(0, 130, 0);
+  background-color: white;
+  cursor: pointer;
+}
+
+.start svg {
+  margin-left: 1rem;
+  color: rgb(249, 255, 250);
+}
+
+
+.sub-main {
+  color: rgb(72, 72, 72);
+}
+
+ul li {
+  margin-left: 0.5rem;
+  font-weight: 200;
+  color: rgb(71, 71, 71);
+}
+
+.right-content {
+  background-image: url("home-img.png");
+  border-radius: 2rem 0rem;
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: cover;
+  flex: 1;
+  height: 100%;
+}
+
+.daily-goals {
+  width: 74%;
+  margin-left: 3rem;
+  margin-top: 1rem;
+}
+
+
+.button-choose button>svg {
+  width: 3rem;
+  display: flex;
+  margin: 0.5rem auto ;
+}
+
+.goal.active {   
+  transform: translateY(-3px);  
+  background:linear-gradient(135deg, #27ae60, #1abc9c);    
+}
+
+#result-page,
+#welcome-page,
+#meditation-page {
+  border-radius: 15px;
+  padding: 30px;
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  font-family: "forum";
+}
+
+#timer {
+  color: #000000;
+  font-size: 100px;
+}
+
+.bg-ijo {
+  background-image: url("background-page.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.box-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 70vh;
+}
+
+#result-goal {
+  margin-top: 10px;
+  font-size: 25px;
+}
+
+
+/* ⁡⁢⁣⁣​‌‍‌--DECORATION LINE--​⁡ */
+
+.vl1 {
+  border-left: 1px solid rgba(164, 164, 164, 0.423);
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  left: 10%;
+}
+
+.vl2 {
+  border-left: 1px solid rgba(164, 164, 164, 0.423);
+  height: 80vh;
+  position: absolute;
+  top: 12.5%;
+  z-index: -1;
+  left: 50%;
+}
+
+
+.vl4 {
+  border-bottom: 1px solid rgba(164, 164, 164, 0.423);
+  width: 90vw;
+  position: absolute;
+  top: 65%;
+  left: 6%;
+  z-index: -1;
+}
+
+/* ⁡⁢⁣⁣​‌‍‌--END DECORATION LINE--​⁡ */
